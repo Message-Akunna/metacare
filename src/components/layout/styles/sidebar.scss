@@ -1,0 +1,77 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../../assets/sass/_variables";
+
+aside.app-sidebar{
+    border-radius: 0;
+    display: block;
+    max-width: 262px;
+    overflow-y: auto;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+
+    // 
+    .card{
+        padding: 1.25rem;
+        .card-body{
+            
+        }
+    }
+    nav.nav{
+        padding-top: 0;
+        .nav-item{
+            // 
+            .nav-link{
+                color: $secondary;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.625rem 1.25rem;
+                &.dropdown-toggle::after{
+                    display: none !important;
+                }
+                .nav-link--text{
+                    padding-left: 1rem;
+                }
+            }
+            &.show.dropdown .nav-link.dropdown-toggle, .nav-link.active{
+                color: $primary;
+                svg {
+                    fill: $primary;
+                }
+            }
+            // 
+            &.dropdown .nav-link.dropdown-toggle .nav-link--chevron{
+                color: $secondary;
+                transition: 250ms ease-in-out;
+            }
+            &.show.dropdown .nav-link.dropdown-toggle .nav-link--chevron{
+                transform: rotate(90deg);
+            }
+            // 
+            &.dropdown .dropdown-menu{
+                padding-top: 0;
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+                position: relative !important;
+                transform: translate3d(0, 0, 0) !important;
+                border: none !important;
+                transition: 250ms ease-in-out;
+                // 
+                .dropdown-item{
+                    padding: 0.3125rem 1rem 0.3125rem 1rem ;
+                    transition: 250ms ease-in-out;
+                    color: $secondary;
+                    font-size: 1rem;
+                    border-left: 0.0625rem solid transparent;
+                    &:hover, &:active, &.active{
+                        color: $dark;
+                        background-color: transparent;
+                        border-left: 0.0625rem solid $light;
+                    }
+                }
+            }
+        } 
+    }
+}
