@@ -5,7 +5,7 @@ import "./assets/sass/app.scss";
 // bootstrap icons
 import "bootstrap-icons/font/bootstrap-icons.css";
 // components
-import Dashboard from './components';
+import Dashboard from './pages/dashboard';
 
 
 const App : FC = () => {

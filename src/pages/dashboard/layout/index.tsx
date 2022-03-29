@@ -3,7 +3,7 @@ import React, { FC, Fragment } from 'react';
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 // styles
-import "./styles/dashboard.scss";
+import "../../../assets/sass/dashboard/dashboard.scss"
 
 interface Props {
     children?: React.ReactNode;

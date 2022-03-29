@@ -1,5 +1,5 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../../../assets/sass/_variables";
+@import "../../_variables";
 
 aside.app-sidebar{
     border-radius: 0;
@@ -43,7 +43,7 @@ aside.app-sidebar{
             }
             // 
             &.dropdown .nav-link.dropdown-toggle .nav-link--chevron{
-                color: $secondary;
+                color: $light;
                 transition: 250ms ease-in-out;
             }
             &.show.dropdown .nav-link.dropdown-toggle .nav-link--chevron{
@@ -73,5 +73,11 @@ aside.app-sidebar{
                 }
             }
         } 
+    }
+}
+
+@media (max-width: 991.98px) {
+    aside.app-sidebar{
+        max-width: 100%;
     }
 }
