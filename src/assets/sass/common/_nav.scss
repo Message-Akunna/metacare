@@ -1,0 +1,17 @@
+@import "./variables";
+.app-nav{
+    &.nav-pills{
+        gap: 2.5rem;
+        .nav-item a{
+            color: $secondary;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            display: inline-block;
+            margin-bottom: -1px;
+            &.active{
+                color: $dark;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+}

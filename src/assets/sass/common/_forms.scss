@@ -1,0 +1,64 @@
+@import "./variables";
+/* search input */
+input[type="search"], [class*='search-input-'] {
+    border: 1px solid $border-light;
+    background-image: url("../../images/icons/search.svg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 21px !important;
+    min-width: 350px;
+    &.search-input-left{
+        padding-left: 56px !important;
+        background-position: left 18px center;
+    }
+    &.search-input-right{
+        padding-right: 56px !important;
+        background-position: right 18px center;
+    }
+}
+
+// 
+.form-control, .form-select{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    padding: 0.625rem 1rem;
+    box-sizing: border-box;
+    border: 1px solid $border-light;
+    transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &.form-control-sm, .form-select-sm{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+    &::placeholder{
+        color: $light-gray;
+    }
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        background-color: $light-ultra;
+        border: 1px solid $primary;
+        box-shadow: 0 0 0px 1000px $light-ultra inset;
+        -webkit-box-shadow: 0 0 0px 1000px $light-ultra inset;
+        transition: background-color 0.25s ease-in-out 0.25s;
+    }
+
+    &:hover,
+    &.form-control-primary:hover{
+        border: 1px solid $primary;
+        background: white;
+    }
+    &:focus,
+    &.form-control-primary:focus{
+        border: 1px solid $primary;
+        box-shadow: none;
+    }
+}
+
+.btn{
+    padding: 0.625rem 1rem;
+    border-radius: 0.625rem;
+    &.btn-success{
+        color: white;
+    }
+}
