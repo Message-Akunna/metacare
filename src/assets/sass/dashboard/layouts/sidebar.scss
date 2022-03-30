@@ -1,14 +1,18 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../../_variables";
+@import "../../common/_variables";
 
 aside.app-sidebar{
     border-radius: 0;
     display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     max-width: 262px;
     overflow-y: auto;
     transition: all .2s ease-in-out;
     width: 100%;
-    z-index: 1000;
+    z-index: 1040;
+    background-color: white;
 
     // 
     .card{
@@ -80,4 +84,13 @@ aside.app-sidebar{
     aside.app-sidebar{
         max-width: 100%;
     }
+}
+
+article.app-content{
+    padding-left: 262px;
+} 
+@media (max-width: 991.98px) {
+    article.app-content{
+        padding-left: 0;
+    } 
 }

@@ -6,6 +6,8 @@ import "./assets/sass/app.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 // components
 import Dashboard from './pages/dashboard';
+// 
+import WrongRouteState from './components/placeholder/WrongRouteState';
 
 
 const App : FC = () => {
@@ -13,7 +15,7 @@ const App : FC = () => {
         <Fragment>
             <Routes>
                 <Route path="/" element={<Dashboard/>} />
-                {/* <Route path="*" element={<WrongRouteState />} /> */}
+                <Route path="*" element={<WrongRouteState />} />
             </Routes>
         </Fragment>
     );

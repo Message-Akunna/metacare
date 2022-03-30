@@ -19,7 +19,7 @@ const Header = ({
 }) => {
     return (
         <Navbar  bg="white" className='border-bottom'>
-            <Container className='d-flex justify-content-between align-items-center'>
+            <Container fluid className='d-flex justify-content-between align-items-center app-container'>
                 <Form className="w-50">
                     <Form.Control
                         type="search"

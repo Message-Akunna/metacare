@@ -1,8 +1,9 @@
 /*  the customizations */
 $primary: #6837EF;
+$success: #25BB87;
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
-
+@import "common/variables";
 /* font */
 @font-face {
     font-family: Gelion;
@@ -19,12 +20,12 @@ $primary: #6837EF;
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Bold\ Italic.ttf");
-    font-weight: bold;
+    font-weight: 700;
 }
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Bold.ttf");
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
@@ -41,12 +42,12 @@ $primary: #6837EF;
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Medium\ Italic.ttf");
-    font-weight: medium;
+    font-weight: 500;
 }
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Medium.ttf");
-    font-weight: medium;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
@@ -63,29 +64,54 @@ $primary: #6837EF;
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Light\ Italic.ttf");
-    font-weight: 300;
+    font-weight: 200;
 }
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Light.ttf");
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Thin\ Italic.ttf");
-    font-weight: 200;
+    font-weight: 100;
 }
 @font-face {
     font-family: Gelion;
     src: url("../fonts/gelion/Gelion\ Thin.ttf");
-    font-weight: 200;
+    font-weight: 100;
     font-style: normal;
 }
 
 html,
 body {
 	font-family: Gelion;
-    font-weight: 400;
     font-style: normal;
+    font-size: 16px;
+    // font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    .app-container{
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+    }
+}
+
+.app-main{
+    max-width: 1840px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1840px) {
+    .app-main{
+        border-left: 1px solid $light-gray;
+        border-right: 1px solid $light-gray;
+    }
+}
+
+.app-rounded-10{
+    border-radius: $app-border-radius !important;
 }
