@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 // 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
