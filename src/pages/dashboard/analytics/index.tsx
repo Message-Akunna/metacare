@@ -8,7 +8,7 @@ import AnalyticsNav from "./AnalyticsNav";
 
 const Analytics = () => {    
     
-    const data: Array<object> = [
+    let data: Array<object> = [
         {
             "month": 'Jan', 
             "count": 23
@@ -65,10 +65,10 @@ const Analytics = () => {
             <AnalyticsHeader/>
             <section className='pb-3'>
                 <Container fluid className="app-container">
-                    <AnalyticsCard data={data}/>
-                    <AnalyticsCard data={data}/>
-                    <AnalyticsCard data={data}/>
-                    <AnalyticsCard data={data}/>
+                    <AnalyticsCard data={data} title={"Average Response Time"} color="#F05D23"/>
+                    <AnalyticsCard data={data} title={"Replies per resolution "} color="#3E68FF"/>
+                    <AnalyticsCard data={data} title={"Average resolution time"} color="#FB6491"/>
+                    <AnalyticsCard data={data} title={"First contact resolution rate"} color="#07C9E2"/>
                 </Container>
             </section>
         </Fragment>

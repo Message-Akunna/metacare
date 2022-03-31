@@ -9,7 +9,6 @@ import Navbar  from 'react-bootstrap/Navbar';
 import Container  from 'react-bootstrap/Container';
 import NavDropdown  from 'react-bootstrap/NavDropdown';
 // 
-import "../../../assets/sass/dashboard/layouts/header.scss";
 import { ReactComponent as NotificationIcon } from "../../../assets/images/icons/bell.svg";
 import UserAvatar from "../../../assets/images/avatar/user.png";
 
