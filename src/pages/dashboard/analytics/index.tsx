@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 // 
+import Container from "react-bootstrap/Container";
+// 
 import AnalyticsHeader from './AnalyticsHeader';
 import AnalyticsCard from './AnalyticsCard';
 import AnalyticsNav from "./AnalyticsNav";
@@ -61,10 +63,14 @@ const Analytics = () => {
         <Fragment>
             <AnalyticsNav/>
             <AnalyticsHeader/>
-            <AnalyticsCard data={data}/>
-            <AnalyticsCard data={data}/>
-            <AnalyticsCard data={data}/>
-            <AnalyticsCard data={data}/>
+            <section className='pb-3'>
+                <Container fluid className="app-container">
+                    <AnalyticsCard data={data}/>
+                    <AnalyticsCard data={data}/>
+                    <AnalyticsCard data={data}/>
+                    <AnalyticsCard data={data}/>
+                </Container>
+            </section>
         </Fragment>
     )
 }
