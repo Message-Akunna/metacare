@@ -22,7 +22,7 @@ const AnalyticsCard: FC<Props> = ({
                 <Col lg={9}  className=''>
                     <Card.Body className='h-100'>
                         <Stack direction="horizontal" className='align-items-center flex-wrap'>
-                            <h5 className="text-nowrap mb-0">
+                            <h5 className="text-nowrap mb-3 mb-md-0">
                                 Average response Time <span className="alert alert-success fs-6 py-0 px-2">+4.14%</span>
                             </h5>
                             <Stack direction="horizontal" gap={3} className="ms-md-auto flex-grow-1 flex-md-grow-0">
@@ -49,9 +49,10 @@ const AnalyticsCard: FC<Props> = ({
                         </div>
                     </Card.Body>
                 </Col>
-                <Col lg={3} className=''>
+                <Col lg={3} className='d-flex flex-column flex-lg-row'>
                     <hr className='d-lg-none d-block bg-secondary' />
-                    <Card.Body className='h-100 border-start'>
+                    <div className="vr d-lg-block d-none bg-secondary m-0"/>
+                    <Card.Body className='h-100'>
                         <Stack gap={3} className="flex-lg-column flex-row">
                             <div className='border bg-light p-3 app-rounded-10 flex-fill'>
                                 <p className='text-muted'>Average Response Time</p>

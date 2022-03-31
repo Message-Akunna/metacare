@@ -5,7 +5,6 @@ import Nav  from 'react-bootstrap/Nav';
 import Form  from 'react-bootstrap/Form';
 import Badge  from 'react-bootstrap/Badge';
 import Image  from 'react-bootstrap/Image';
-import Button  from 'react-bootstrap/Button';
 import Navbar  from 'react-bootstrap/Navbar';
 import Container  from 'react-bootstrap/Container';
 import NavDropdown  from 'react-bootstrap/NavDropdown';
@@ -20,11 +19,9 @@ const Header = ({
 }) => {
     return (
         <Navbar  bg="white" className='border-bottom'>
-            <Container fluid className='d-flex justify-content-between align-items-center app-container'>
-                <Button variant="outline-secondary" className="d-block d-lg-none">
-                    <i className='bi-'></i>
-                </Button>
-                <Form className="w-50">
+            <Container fluid className='d-flex justify-content-between align-items-center app-container flex-md-nowrap flex-wrap gap-3'>
+                <Navbar.Toggle aria-controls="offCanvasNavbar"  className="d-block d-lg-none me-3 order-1"/>
+                <Form className="order-md-2 order-3 navbar-search-form">
                     <Form.Control
                         type="search"
                         placeholder="Ask us any question"
@@ -32,7 +29,7 @@ const Header = ({
                         aria-label="Search"
                     />
                 </Form>
-                <Nav  className="ms-auto border right-nav align-items-center">
+                <Nav  className="ms-auto border right-nav align-items-center order-md-3 order-2">
                     <Nav.Link as={NavLink} to="/#notification">
                         <span className=''>
                             <NotificationIcon/>

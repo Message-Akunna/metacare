@@ -5,7 +5,7 @@ input[type="search"], [class*='search-input-'] {
     background-image: url("../../images/icons/search.svg") !important;
     background-repeat: no-repeat !important;
     background-size: 21px !important;
-    min-width: 350px;
+    min-width: 200px;
     &.search-input-left{
         padding-left: 56px !important;
         background-position: left 18px center;
