@@ -9,10 +9,10 @@ aside.app-sidebar{
     bottom: 0;
     max-width: 262px;
     overflow-y: auto;
-    transition: all .2s ease-in-out;
     width: 100%;
     z-index: 1040;
     background-color: white;
+    transition: all 250ms ease-in-out;
 
     // 
     .card{
@@ -82,7 +82,8 @@ aside.app-sidebar{
 
 @media (max-width: 991.98px) {
     aside.app-sidebar{
-        max-width: 100%;
+        max-width: 262px;
+        left: -262px;
     }
 }
 
