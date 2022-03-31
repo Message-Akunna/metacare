@@ -62,3 +62,32 @@ input[type="search"], [class*='search-input-'] {
         color: white;
     }
 }
+
+// 
+.app-select-container{
+    min-width: 160px;
+    .app-select__control{
+        border: 1px solid $border-light;
+        border-radius: $app-border-radius;
+    }
+    .app-select__control--is-focused, 
+    .app-select__control--menu-is-open, 
+    .app-select__control:hover{
+        border-color: $primary !important;
+        box-shadow: none;
+    }
+    // app-select__placeholder
+    .app-select__value-container, 
+    .app-select__indicator{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .app-select__menu{
+        border-radius: $app-border-radius;
+        .app-select__option{
+            &.app-select__option--is-selected{
+                background-color: $primary !important;;
+            }
+        }
+    }
+}

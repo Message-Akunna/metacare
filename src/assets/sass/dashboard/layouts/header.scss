@@ -33,6 +33,14 @@ header.app-header{
                 display: none;
             }
         }
+        .dropdown-menu{
+            z-index: 1040;
+            border-radius: $app-border-radius;
+        }
+        .dropdown-menu.show{
+            top: 48px;
+            right: -14px;
+        }
     }
     // 
     .app-container{

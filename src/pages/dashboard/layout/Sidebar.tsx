@@ -5,9 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Card from 'react-bootstrap/Card';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 // 
-// import { MatchRoute } from '../../../helpers';
-// 
-import "../../../assets/sass/dashboard/layouts/sidebar.scss";
 import { ReactComponent as AdminIcon } from "../../../assets/images/icons/admin.svg";
 import { ReactComponent as KnowledgeBaseIcon } from "../../../assets/images/icons/knowledge-base.svg";
 import { ReactComponent as InboxIcon } from "../../../assets/images/icons/agent-inbox.svg";
@@ -15,8 +12,6 @@ import { ReactComponent as HelpCenterIcon } from "../../../assets/images/icons/h
 import { ReactComponent as AnalyticsIcon } from "../../../assets/images/icons/analytics.svg";
 
 const Sidebar = () => {
-    // let resolved = useResolvedPath(to);
-    // let match = useMatch({ path: resolved.pathname, end: true });
 
     return (
         <Fragment>

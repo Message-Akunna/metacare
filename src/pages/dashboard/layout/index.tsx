@@ -2,8 +2,6 @@ import React, { FC, Fragment } from 'react';
 // layout components
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-// styles
-import "../../../assets/sass/dashboard/dashboard.scss"
 
 interface Props {
     children?: React.ReactNode;
