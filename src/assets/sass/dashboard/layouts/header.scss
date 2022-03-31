@@ -2,19 +2,31 @@
 
 header.app-header{
     input[type="search"]{
-        padding-top: 0.75rem !important;
-        padding-bottom: 0.75rem !important;
+        padding-top: 0.875rem !important;
+        padding-bottom: 0.875rem !important;
         border-radius: 0.625rem;
         background-color: $light-ultra !important;
         border: 1px solid $light-ultra;
     }
+    input[type="search"]:hover{
+        border: 1px solid $primary;
+    }
     // 
     nav.navbar{
         padding: 0 !important;
+        // 
+        .navbar-toggler{
+            padding: 0.625rem 0.75rem !important;
+            border-radius: $app-border-radius;
+        }
+        // 
+        .navbar-search-form{
+            width: 100%;
+        }
     }
     .right-nav{
         border-radius: 0.625rem;
-        padding:  0.75rem;
+        padding: 0.625rem 0.75rem;
         .nav-link{
             padding: 0!important;
             &.dropdown-toggle::after{
@@ -26,5 +38,11 @@ header.app-header{
     .app-container{
         padding-top: 0.75rem !important;
         padding-bottom: 0.75rem !important;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-search-form{
+        max-width: 50%;
     }
 }
