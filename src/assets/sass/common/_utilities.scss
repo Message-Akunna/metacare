@@ -27,3 +27,15 @@
 .overflow-y-hidden {
     overflow-y: hidden !important;
 }
+// 
+.fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-out 250ms, opacity 250ms ease-out;
+}
