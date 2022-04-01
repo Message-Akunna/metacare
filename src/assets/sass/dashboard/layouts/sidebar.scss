@@ -16,9 +16,9 @@ aside.app-sidebar{
     // 
     .card{
         padding: 1.25rem;
-        // .card-body{
-            
-        // }
+        .card-body{
+            border-radius: $app-border-radius;
+        }
     }
     nav.nav{
         padding-top: 0;

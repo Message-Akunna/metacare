@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 // react-bootstrap components
 import Nav from 'react-bootstrap/Nav';
 import Card from 'react-bootstrap/Card';
@@ -13,10 +13,12 @@ import { ReactComponent as AnalyticsIcon } from "../../../assets/images/icons/an
 
 const Sidebar = () => {
 
+    const location = useLocation();
+
     return (
         <Fragment>
             <Card className="border-0">
-                <Card.Body className="border rounded-3">
+                <Card.Body className="border">
                     <Card.Title className="mb-0 fs-6">Metacare</Card.Title>
                     <span className='small text-muted mb-0 d-block'>adeyinka@metacare.app</span>
                 </Card.Body>
@@ -95,7 +97,7 @@ const Sidebar = () => {
                         <span className='nav-link--chevron'>
                             <i className='bi-chevron-right'></i>
                         </span>
-                    </>} className="" align="start">
+                    </>} className={location.pathname === "/" ? "show" : ""} align="start">
                     <NavDropdown.Item  as={NavLink} to="/">
                         <span className="dropdown-text">Teams</span>
                     </NavDropdown.Item>

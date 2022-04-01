@@ -32,6 +32,7 @@ const AnalyticsCard: FC<Props> = ({
 }) => {
 
     // const randomColor = RandomDarkHexColor();
+    // 
 
     const options: Array<object> = [
         { value: "day", label: "Today" },
@@ -66,7 +67,7 @@ const AnalyticsCard: FC<Props> = ({
                                     components={{ DropdownIndicator }}
                                     options={options}
                                     isClearable={true}
-                                    isSearchable={true}
+                                    isSearchable={false}
                                     placeholder={"Filter options"}
                                     name="filter"
                                 />

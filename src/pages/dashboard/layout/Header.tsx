@@ -27,8 +27,8 @@ const Header = () => {
     return (
         <Navbar  bg="white" className='border-bottom'>
             <Container fluid className='d-flex justify-content-between align-items-center app-container flex-md-nowrap flex-wrap gap-3'>
-                <Navbar.Toggle onClick={handleOnClick} className="d-block d-lg-none me-3 order-1"/>
-                
+                <Navbar.Toggle onClick={handleOnClick} className="d-block d-lg-none me-3 order-1 border-0"/>
+
                 <Form className="order-md-2 order-3 navbar-search-form">
                     <Form.Control
                         type="search"
