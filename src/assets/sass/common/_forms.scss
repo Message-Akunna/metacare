@@ -21,7 +21,7 @@ input[type="search"], [class*='search-input-'] {
     font-size: 1rem;
     line-height: 1.5rem;
     border-radius: 10px;
-    padding: 0.625rem 1rem;
+    padding: 0.5625rem 1rem;
     box-sizing: border-box;
     border: 1px solid $border-light;
     transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -79,8 +79,8 @@ input[type="search"], [class*='search-input-'] {
     // app-select__placeholder
     .app-select__value-container, 
     .app-select__indicator{
-        padding-bottom: 5px;
-        padding-top: 5px;
+        padding-bottom: 9px;
+        padding-top: 9px;
     }
     .app-select__menu{
         border-radius: $app-border-radius;

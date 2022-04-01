@@ -23,7 +23,7 @@ const AnalyticsHeader = () => {
                             classNamePrefix="app-select"
                             options={options}
                             isClearable={true}
-                            isSearchable={true}
+                            isSearchable={false}
                             placeholder={"Filter options"}
                             name="filter"
                         />
