@@ -76,7 +76,7 @@ const AnalyticsCard: FC<Props> = ({
                         <div className='pt-3'>
                             <ResponsiveContainer width="100%" height={200} >
                                 <LineChart width={500} height={200} data={data} margin={{ left: -20 }}>
-                                    <Line type="linear" dataKey="count" stroke={color} dot={{ stroke: color, strokeWidth: 1, r: 4, strokeDasharray:''}}  activeDot={{ r: 6 }} />
+                                    <Line type="linear" dataKey="replies" stroke={color} dot={{ stroke: color, strokeWidth: 1, r: 4, strokeDasharray:''}}  activeDot={{ r: 6 }} />
                                     <Tooltip />
                                     <CartesianGrid stroke="#ccc" vertical={false}/>
                                     <XAxis dataKey="month" tickLine={false} axisLine={false} />
