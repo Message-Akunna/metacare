@@ -4,51 +4,51 @@ import * as types from '../types';
 const data: Array<object> = [
     {
         "month": 'Jan', 
-        "count": 23
+        "replies": 23
     },
     {
         "month": 'Feb', 
-        "count": 34
+        "replies": 34
     },
     {
         "month": 'Mar', 
-        "count": 43
+        "replies": 43
     },
     {
         "month": 'Apr', 
-        "count": 23
+        "replies": 23
     },
     {
         "month": 'May', 
-        "count": 45
+        "replies": 45
     },
     {
         "month": 'Jun', 
-        "count": 32
+        "replies": 32
     },
     {
         "month": 'Jul', 
-        "count": 54
+        "replies": 54
     },
     {
         "month": 'Aug', 
-        "count": 12
+        "replies": 12
     },
     {
         "month": 'Sep', 
-        "count": 33
+        "replies": 33
     },
     {
         "month": 'Oct', 
-        "count": 51
+        "replies": 51
     },
     {
         "month": 'Nov', 
-        "count": 24
+        "replies": 24
     },
     {
         "month": 'Dec', 
-        "count": 40
+        "replies": 40
     }
 ]
 
